@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <android.support.v7.widget.CardView
+        android:id="@+id/place_card_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        card_view:cardElevation="2dp"
+        card_view:cardCornerRadius="0dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:background="@color/PrimaryColor">
+                <TextView
+                    android:id="@+id/place_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:textColor="@android:color/white"
+                    android:text="PLACE_TITLE"
+                    android:textStyle="bold"
+                    android:fontFamily="sans-serif" />
+                <TextView
+                    android:id="@+id/place_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|top"
+                    android:textColor="@android:color/white"
+                    android:text="address"
+                    android:textSize="5pt"
+                    android:fontFamily="sans-serif" />
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/action_container"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:gravity="center"
+                android:background="@color/PrimaryColor"
+                android:orientation="horizontal">
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btn_share_action"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_anchor="@id/place_card_container"
+        app:backgroundTint="@android:color/white"
+        app:layout_anchorGravity="top|right|end"
+        app:borderWidth="0dp"
+        app:elevation="5dp"
+        android:scaleType="center"
+        android:src="@drawable/ic_share_accent"
+        android:layout_margin="20dp"
+        android:clickable="true"/>
+</android.support.design.widget.CoordinatorLayout>
+
+

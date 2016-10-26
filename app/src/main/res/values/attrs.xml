@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="place_card_action_close" type="id"/>
+    <item name="place_card_action_share" type="id"/>
+    <item name="place_card_action_website" type="id"/>
+    <item name="place_card_action_save" type="id"/>
+</resources>

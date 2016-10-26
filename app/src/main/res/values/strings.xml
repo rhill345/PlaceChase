@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Place Chase</string>
+    <string name="closeDrawer">Navigation View</string>
+    <string name="openDrawer">Navigation View Closed</string>
+    <string name="action_search">Search</string>
+    <string name="place_website">WEBSITE</string>
+    <string name="place_close">CLOSE</string>
+    <string name="place_share">SHARE</string>
+    <string name="place_navigate">NAVIGATE</string>
+
+    <string name="pager_sent_title">SENT</string>
+    <string name="pager_received_title">RECEIVED</string>
+
+    <string name="menu_history">History</string>
+    <string name="menu_about">About</string>
+
+    <string name="share_title">Share Place!</string>
+    <string name="share_message">Hey, I\'d like you to check out this new cool place.</string>
+    <string name="error_no_email_client">There is no email client installed</string>
+    <string name="error_no_message_client">There is no message client installed.</string>
+
+    <string name="activity_title_share_with">Share with...</string>
+    <string name="activity_title_share_history">Share History</string>
+    <string name="share_message_title">Chase This Place!</string>
+
+    <string name="history_error_empty">No share history to show</string>
+
+    <string name="share_manager_selector_title">Share by...</string>
+    <string name="share_manager_send_email">Send mail...</string>
+    <string name="share_manager_selector_email">Email</string>
+    <string name="share_manager_selector_text">Text Message</string>
+</resources>
