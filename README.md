@@ -1,5 +1,5 @@
 # PlaceChase
-Android application for view and sharing places.
+Android application for viewing and sharing places.
 
 This application allows users to share and find google places with contacts.
 
