@@ -218,23 +218,27 @@ public class HomeFragment extends Fragment  implements GoogleApiClient.Connectio
     * */
     private void setPlace(final Place place) {
         mSelectedPlace = place;
-        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngBounds(mSelectedPlace.getViewport(),0);
+
         MarkerOptions mo = new MarkerOptions().position(mSelectedPlace.getLatLng()).title(place.getName().toString());
 
-        //Store marker in map to load details later
-        mPlaceIdHistoryMap.put(mMap.addMarker(mo),place.getId());
 
+
+        CameraUpdate cameraUpdate = CameraUpdateFactory.newLatLngZoom(mSelectedPlace.getLatLng(),13);
+
+        //Store marker in map to load details later
+        mPlaceIdHistoryMap.put(mMap.addMarker(mo), place.getId());
         mMap.animateCamera(cameraUpdate);
         mPlaceDetailsCard.findViewById(R.id.btn_share_action).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                GeneralUtils.openContactShareActivity(getContext(),place);
+                GeneralUtils.openContactShareActivity(getContext(), place);
             }
         });
-        ((TextView)mPlaceDetailsCard.findViewById(R.id.place_title)).setText(place.getName());
-        ((TextView)mPlaceDetailsCard.findViewById(R.id.place_address)).setText(place.getAddress());
+        ((TextView) mPlaceDetailsCard.findViewById(R.id.place_title)).setText(place.getName());
+        ((TextView) mPlaceDetailsCard.findViewById(R.id.place_address)).setText(place.getAddress());
         setPlaceActions(place);
         showPlace();
+
     }
 
     /*
