@@ -43,7 +43,7 @@ public class MainActivity extends AppCompatActivity {
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         toolbar.setBackgroundColor(getResources().getColor(R.color.blackTransparent));
-
+        getSupportActionBar().setTitle(getString(R.string.activity_title_find_place));
 
 
         //Initializing NavigationView
